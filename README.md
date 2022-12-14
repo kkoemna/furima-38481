@@ -11,9 +11,7 @@
 | first_name         | string  | null: false               |
 | last_name_kana     | string  | null: false               |
 | first_name_kana    | string  | null: false               |
-| birth_year_id      | integer | null: false               |
-| birth_month_id     | integer | null: false               |
-| birth_day_id       | integer | null: false               |
+| birthday           | date    | null: false               |
 
 ### Association
 
@@ -30,7 +28,7 @@
 | category_id         | integer    | null: false                    |
 | condition_id        | integer    | null: false                    |
 | shipping_charges_id | integer    | null: false                    |
-| region_of_origin_id | integer    | null: false                    |
+| prefecture_id       | integer    | null: false                    |
 | days_to_ship_id     | integer    | null: false                    |
 | price               | integer    | null: false                    |
 | user                | references | null: false, foreign_key: true |
