@@ -64,8 +64,8 @@ GEM
       sshkit (>= 1.6.1, != 1.7.0)
     ast (2.4.2)
     aws-eventstream (1.2.0)
-    aws-partitions (1.697.0)
-    aws-sdk-core (3.169.0)
+    aws-partitions (1.701.0)
+    aws-sdk-core (3.170.0)
       aws-eventstream (~> 1, >= 1.0.2)
       aws-partitions (~> 1, >= 1.651.0)
       aws-sigv4 (~> 1.5)
@@ -73,7 +73,7 @@ GEM
     aws-sdk-kms (1.62.0)
       aws-sdk-core (~> 3, >= 3.165.0)
       aws-sigv4 (~> 1.1)
-    aws-sdk-s3 (1.118.0)
+    aws-sdk-s3 (1.119.0)
       aws-sdk-core (~> 3, >= 3.165.0)
       aws-sdk-kms (~> 1)
       aws-sigv4 (~> 1.4)
@@ -81,7 +81,7 @@ GEM
       aws-eventstream (~> 1, >= 1.0.2)
     bcrypt (3.1.18)
     bindex (0.8.1)
-    bootsnap (1.15.0)
+    bootsnap (1.16.0)
       msgpack (~> 1.2)
     builder (3.2.4)
     byebug (11.1.3)
@@ -110,9 +110,8 @@ GEM
       regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
     childprocess (4.1.0)
-    concurrent-ruby (1.1.10)
+    concurrent-ruby (1.2.0)
     crass (1.0.6)
-    date (3.3.3)
     devise (4.8.1)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -133,7 +132,7 @@ GEM
     ffi (1.15.5)
     gimei (1.1.0)
       romaji
-    globalid (1.0.1)
+    globalid (1.1.0)
       activesupport (>= 5.0)
     http-accept (1.7.0)
     http-cookie (1.0.5)
@@ -156,11 +155,8 @@ GEM
     loofah (2.19.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
-    mail (2.8.0.1)
+    mail (2.7.1)
       mini_mime (>= 0.1.1)
-      net-imap
-      net-pop
-      net-smtp
     marcel (1.0.2)
     matrix (0.4.2)
     method_source (1.0.0)
@@ -169,26 +165,15 @@ GEM
     mime-types-data (3.2022.0105)
     mini_magick (4.12.0)
     mini_mime (1.1.2)
-    mini_portile2 (2.8.1)
     minitest (5.17.0)
     msgpack (1.6.0)
-    mysql2 (0.5.4)
-    net-imap (0.3.4)
-      date
-      net-protocol
-    net-pop (0.1.2)
-      net-protocol
-    net-protocol (0.2.1)
-      timeout
+    mysql2 (0.5.5)
     net-scp (4.0.0)
       net-ssh (>= 2.6.5, < 8.0.0)
-    net-smtp (0.3.3)
-      net-protocol
     net-ssh (7.0.1)
     netrc (0.11.0)
     nio4r (2.5.8)
-    nokogiri (1.13.10)
-      mini_portile2 (~> 2.8.0)
+    nokogiri (1.13.10-x86_64-darwin)
       racc (~> 1.4)
     orm_adapter (0.5.0)
     parallel (1.22.1)
@@ -265,7 +250,7 @@ GEM
       rspec-mocks (~> 3.10)
       rspec-support (~> 3.10)
     rspec-support (3.12.0)
-    rubocop (1.43.0)
+    rubocop (1.44.1)
       json (~> 2.3)
       parallel (~> 1.10)
       parser (>= 3.2.0.0)
@@ -314,7 +299,6 @@ GEM
     thor (1.2.1)
     thread_safe (0.3.6)
     tilt (2.0.11)
-    timeout (0.3.1)
     turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
     turbolinks-source (5.2.0)
@@ -350,7 +334,7 @@ GEM
     zeitwerk (2.6.6)
 
 PLATFORMS
-  ruby
+  x86_64-darwin-22
 
 DEPENDENCIES
   active_hash
@@ -370,6 +354,7 @@ DEPENDENCIES
   image_processing (~> 1.2)
   jbuilder (~> 2.7)
   listen (>= 3.0.5, < 3.2)
+  mail (= 2.7.1)
   mini_magick
   mysql2 (>= 0.4.4)
   payjp
@@ -392,4 +377,4 @@ RUBY VERSION
    ruby 2.6.5p114
 
 BUNDLED WITH
-   1.17.2
+   2.4.5
