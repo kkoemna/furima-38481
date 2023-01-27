@@ -31,3 +31,6 @@ namespace :deploy do
     invoke 'unicorn:restart'
   end
 end
+
+# masterブランチではなくmainブランチを参照するための記述
+set :branch, 'main'
